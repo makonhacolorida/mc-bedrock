@@ -41,9 +41,6 @@ class ascii:
     '''
 
 class visual:
-    def center(texto):
-        return texto.center(os.get_terminal_size().columns)
-
     def Logger(texto):
         print(time.strftime(f"[bold dark_orange3][%H:%M:%S]:[/bold dark_orange3] {texto}", time.localtime()))
 
@@ -97,7 +94,7 @@ def cheat_trial():
 
 while True:
 	os.system('cls')
-	print(visual.center(ascii.logo))
+	print(ascii.logo)
 
 	opcao = input('>>> ')
 
